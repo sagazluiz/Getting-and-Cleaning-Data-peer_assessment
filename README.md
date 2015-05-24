@@ -1,7 +1,9 @@
 # Getting-and-Cleaning-Data-peer_assessment
+
 Repo for the peer assessment files
 
-This file describes how run_analysis.R script works.
+This file describes how run_analysis.R script works:
+
 1. First, download the data fromhttps://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip and and save in the directory.
 2.	Make sure to unzip the Dataset folder to the working directory with the run_analysis.R script.
 3.	Use source("run_analysis.R") command in RStudio.
