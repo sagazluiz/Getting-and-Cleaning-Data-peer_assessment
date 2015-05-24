@@ -1,4 +1,10 @@
 
+title: Codebook Samsung Data
+author: sagazluiz
+date: 05-27-2015
+output: "data_means_and_std.txt"
+ 
+
 •	The site where the data was obtained:
 http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones
 The data for the project:
