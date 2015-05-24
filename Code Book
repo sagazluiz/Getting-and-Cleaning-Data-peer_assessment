@@ -4,14 +4,23 @@ author: sagazluiz
 date: 05-27-2015
 output: "data_means_and_std.txt"
  
+ ## Project Description
+ The purpose of this project is to demonstrate your ability to collect, work with, and clean a data set.
 
-•	The site where the data was obtained:
+##Study design and data processing
+It is required to submit: 
+1) a tidy data set as described below;
+2) a link to a Github repository with your script for performing the analysis,and;
+3) a code book that describes the variables, the data, and any transformations or work that you performed to clean up the data called CodeBook.md. You should also include a README.md in the repo with your scripts. This repo explains how all of the scripts work and how they are connected.  
+
+###Collection of the raw data
 http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones
-The data for the project:
 https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip
-•	The run_analysis.R script performs the following steps to clean the data:
 
-i.	Read X_train.txt, y_train.txt and subject_train.txt from the "./data/train" folder and store them in trainData,trainLabel and trainSubject variables respectively.
+###Cleaning of the data
+	The run_analysis.R script performs the following steps to clean the data:
+
+Read X_train.txt, y_train.txt and subject_train.txt from the "./data/train" folder and store them in trainData,trainLabel and trainSubject variables respectively.
 ii.	Read X_test.txt, y_test.txt and subject_test.txt from the "./data/test" folder and store them in testData, testLabeland testsubject variables respectively.
 iii.	Concatenate testData to trainData to generate a 10299x561 data frame, joinData; concatenate testLabel totrainLabel to generate a 10299x1 data frame, joinLabel; concatenate testSubject to trainSubject to generate a 10299x1 data frame, joinSubject.
 iv.	Read the features.txt file from the "/data" folder and store the data in a variable called features. We only extract the measurements on the mean and standard deviation. This results in a 66 indices list. We get a subset ofjoinData with the 66 corresponding columns.
